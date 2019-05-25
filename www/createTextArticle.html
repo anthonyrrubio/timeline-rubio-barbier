@@ -6,22 +6,37 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/createTextNote.css">
         <title>Article Texte</title>
     </head>
     <body>
         <div class="app">
-            <div class="list" id='form-note' style="margin-top: 100px">
-                <div class="item label-float">
-                  <label>Titre</label>
-                  <input id='title_input' type="text"/>
-                </div>
-                <div class="item label-float">
-                  <label>Note</label>
-                  <textarea id='text_input' rows="20"> </textarea>
+            <div class="container-form100">
+                <div class="wrap-form100">
+                    <form class="form100-form validate-form">
+                        <span class="form100-form-title">
+                            Ajouter une note
+                        </span>
+
+                        <div class="wrap-input100 validate-input">
+                            <input id='title_input' class="input100" type="text" placeholder="Titre">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input">
+                            <textarea id='text_input' class="input100" placeholder="Votre note"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                    </form>
+                    <div class="container-form100-form-btn">
+                        <button id="validate-text-note" class="form100-form-btn">
+                            <span>
+                                Valider
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <button id="validate-text-note" class="green radius full">Valider</button>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>

@@ -383,10 +383,9 @@ var app = {
   initialize: function () {
     const localStorage = window.localStorage
     console.log(localStorage)
-    // localStorage.clear()
+    //localStorage.clear()
     showLocalStorage()
     document.addEventListener('deviceready', this.onDeviceReady.bind(this), false)
-    // document.getElementById("selectTypeOfArticle").addEventListener("click", showSelectTypeOfArticle)
   },
 
   // deviceready Event Handler

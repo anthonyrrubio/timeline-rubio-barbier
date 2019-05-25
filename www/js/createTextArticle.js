@@ -17,9 +17,8 @@ function onDeviceReady() {
             text : document.getElementById("text_input").value,
             date : noteDate,
         }
-        let noteJSON = JSON.stringify(note);
-        localStorage.setItem(r, noteJSON);
-        window.location = "index.html";
+        let noteJSON = JSON.stringify(note)
+        localStorage.setItem(r, noteJSON)
+        window.location = "index.html"
     }
-
 }
