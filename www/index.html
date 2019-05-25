@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <link rel="stylesheet" type="text/css" href="mobileui/style.css">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>My Timeline</title>
-    </head>
-    <body>
-        <div class="app">
-            <div id="note-container">
-                
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <title>My Timeline</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="menu blue" id="nav-menu">
+            <button id="close-menu" class="blue-800 full icon ion-close-round" onclick="closeMenu('nav-menu')"></button>
+            <p class="nav-item"><a href="index.html">Timeline</a></p>
+            <p class="nav-item"><a href="credits.html">Crédits</a></p>
+        </div>
+        <div class="header blue">
+            <div class="left">
+                <button id="open-menu" class="icon ion-navicon-round" onclick="openMenu('nav-menu')"></button>
+            </div>
+            <h1>My Timeline</h1>
+            <div class="right">
+                <button class="icon ion-android-calendar"></button>
             </div>
         </div>
+        <div id="note-container">
+            <div id="timeline" class="timeline grey-100">
+
+            </div>
+        </div>
+        <div class="fadeout"></div>
 
         <div id="add_icon">
-            <button id="selectTypeOfArticle" class="green circle icon ion-plus"></button>
+            <!-- <button id="selectTypeOfArticle" class="blue circle icon ion-plus-round"></button> -->
+
+        <ul id="menu">
+            <a class="menu-button icon ion-plus-round" href="#menu" title="Show navigation"></a>
+            <a class="menu-button icon ion-close-round" href="#0" title="Hide navigation"></a>
+            <li class="menu-item">
+                <a href="#menu" title="Position">
+                    <span class="icon ion-location" onclick="getCurrentLocation()"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Note">
+                    <span class="icon ion-document-text" onclick="window.location.replace('createTextArticle.html')"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Vidéo">
+                    <span class="icon ion-videocamera" onclick="cameraTakeVideo()"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Photo">
+                    <span class="icon ion-camera" onclick="cameraTakePicture()"></span>
+                </a>
+            </li>
+        </ul>
+
         </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <script src="js/leaflet.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-    </body>
+</body>
+
 </html>

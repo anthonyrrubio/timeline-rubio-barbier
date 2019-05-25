@@ -7,19 +7,19 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.example.projetTimeline"
-    },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.example.projetTimeline"
-    },
-    "cordova-plugin-media-capture": {
       "PACKAGE_NAME": "com.example.projetTimeline"
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.example.projetTimeline"
     },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.example.projetTimeline"
+    },
     "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.example.projetTimeline"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.projetTimeline"
     }
   },

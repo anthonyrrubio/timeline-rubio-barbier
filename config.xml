@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.projetTimeline" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.projetTimeline" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Timeline</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -8,6 +9,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <icon src="www/img/logo.png" />
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
@@ -19,9 +21,16 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+            <splash src="www/img/splash/land-hdpi.png" density="land-hdpi" />
+            <splash src="www/img/splash/land-ldpi.png" density="land-ldpi" />
+            <splash src="www/img/splash/port-hdpi.png" density="port-hdpi" />
+            <splash src="www/img/splash/port-ldpi.png" density="port-ldpi" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenBackgroundColor" value="#178FEB" />
 </widget>

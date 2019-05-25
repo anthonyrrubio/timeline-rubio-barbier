@@ -1,0 +1,31 @@
+body {
+    font-family: 'Quicksand';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    margin-top: 100px;
+}
+
+.wrapper h2 {
+    color: #072F5F;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.accent {
+    font-weight: 600;
+}
+
+.studs {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+}
